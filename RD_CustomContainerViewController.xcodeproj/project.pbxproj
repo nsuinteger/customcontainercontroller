@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A377D11925316600481FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377D01925316600481FEC /* Foundation.framework */; };
+		08A377D31925316600481FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377D21925316600481FEC /* CoreGraphics.framework */; };
+		08A377D51925316600481FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377D41925316600481FEC /* UIKit.framework */; };
+		08A377DB1925316600481FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08A377D91925316600481FEC /* InfoPlist.strings */; };
+		08A377DD1925316600481FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A377DC1925316600481FEC /* main.m */; };
+		08A377E11925316600481FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A377E01925316600481FEC /* AppDelegate.m */; };
+		08A377E41925316600481FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A377E21925316600481FEC /* Main.storyboard */; };
+		08A377E71925316600481FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A377E61925316600481FEC /* ViewController.m */; };
+		08A377E91925316600481FEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A377E81925316600481FEC /* Images.xcassets */; };
+		08A377F01925316600481FEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377EF1925316600481FEC /* XCTest.framework */; };
+		08A377F11925316600481FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377D01925316600481FEC /* Foundation.framework */; };
+		08A377F21925316600481FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A377D41925316600481FEC /* UIKit.framework */; };
+		08A377FA1925316600481FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08A377F81925316600481FEC /* InfoPlist.strings */; };
+		08A377FC1925316600481FEC /* RD_CustomContainerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A377FB1925316600481FEC /* RD_CustomContainerViewControllerTests.m */; };
+		08A378081925344500481FEC /* ChildViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A378061925344500481FEC /* ChildViewController1.m */; };
+		08A378091925344500481FEC /* ChildViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A378071925344500481FEC /* ChildViewController1.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08A377F31925316600481FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A377C51925316600481FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A377CC1925316600481FEC;
+			remoteInfo = RD_CustomContainerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A377CD1925316600481FEC /* RD_CustomContainerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RD_CustomContainerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A377D01925316600481FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08A377D21925316600481FEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		08A377D41925316600481FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		08A377D81925316600481FEC /* RD_CustomContainerViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RD_CustomContainerViewController-Info.plist"; sourceTree = "<group>"; };
+		08A377DA1925316600481FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08A377DC1925316600481FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08A377DE1925316600481FEC /* RD_CustomContainerViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RD_CustomContainerViewController-Prefix.pch"; sourceTree = "<group>"; };
+		08A377DF1925316600481FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08A377E01925316600481FEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08A377E31925316600481FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08A377E51925316600481FEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08A377E61925316600481FEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08A377E81925316600481FEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08A377EE1925316600481FEC /* RD_CustomContainerViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RD_CustomContainerViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A377EF1925316600481FEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		08A377F71925316600481FEC /* RD_CustomContainerViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RD_CustomContainerViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		08A377F91925316600481FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08A377FB1925316600481FEC /* RD_CustomContainerViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RD_CustomContainerViewControllerTests.m; sourceTree = "<group>"; };
+		08A378051925344500481FEC /* ChildViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController1.h; sourceTree = "<group>"; };
+		08A378061925344500481FEC /* ChildViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController1.m; sourceTree = "<group>"; };
+		08A378071925344500481FEC /* ChildViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController1.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A377CA1925316600481FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377D31925316600481FEC /* CoreGraphics.framework in Frameworks */,
+				08A377D51925316600481FEC /* UIKit.framework in Frameworks */,
+				08A377D11925316600481FEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A377EB1925316600481FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377F01925316600481FEC /* XCTest.framework in Frameworks */,
+				08A377F21925316600481FEC /* UIKit.framework in Frameworks */,
+				08A377F11925316600481FEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A377C41925316600481FEC = {
+			isa = PBXGroup;
+			children = (
+				08A377D61925316600481FEC /* RD_CustomContainerViewController */,
+				08A377F51925316600481FEC /* RD_CustomContainerViewControllerTests */,
+				08A377CF1925316600481FEC /* Frameworks */,
+				08A377CE1925316600481FEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08A377CE1925316600481FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A377CD1925316600481FEC /* RD_CustomContainerViewController.app */,
+				08A377EE1925316600481FEC /* RD_CustomContainerViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08A377CF1925316600481FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A377D01925316600481FEC /* Foundation.framework */,
+				08A377D21925316600481FEC /* CoreGraphics.framework */,
+				08A377D41925316600481FEC /* UIKit.framework */,
+				08A377EF1925316600481FEC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A377D61925316600481FEC /* RD_CustomContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08A377DF1925316600481FEC /* AppDelegate.h */,
+				08A377E01925316600481FEC /* AppDelegate.m */,
+				08A377E21925316600481FEC /* Main.storyboard */,
+				08A377E51925316600481FEC /* ViewController.h */,
+				08A377E61925316600481FEC /* ViewController.m */,
+				08A377E81925316600481FEC /* Images.xcassets */,
+				08A377D71925316600481FEC /* Supporting Files */,
+				08A378051925344500481FEC /* ChildViewController1.h */,
+				08A378061925344500481FEC /* ChildViewController1.m */,
+				08A378071925344500481FEC /* ChildViewController1.xib */,
+			);
+			path = RD_CustomContainerViewController;
+			sourceTree = "<group>";
+		};
+		08A377D71925316600481FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08A377D81925316600481FEC /* RD_CustomContainerViewController-Info.plist */,
+				08A377D91925316600481FEC /* InfoPlist.strings */,
+				08A377DC1925316600481FEC /* main.m */,
+				08A377DE1925316600481FEC /* RD_CustomContainerViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08A377F51925316600481FEC /* RD_CustomContainerViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				08A377FB1925316600481FEC /* RD_CustomContainerViewControllerTests.m */,
+				08A377F61925316600481FEC /* Supporting Files */,
+			);
+			path = RD_CustomContainerViewControllerTests;
+			sourceTree = "<group>";
+		};
+		08A377F61925316600481FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08A377F71925316600481FEC /* RD_CustomContainerViewControllerTests-Info.plist */,
+				08A377F81925316600481FEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08A377CC1925316600481FEC /* RD_CustomContainerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A377FF1925316600481FEC /* Build configuration list for PBXNativeTarget "RD_CustomContainerViewController" */;
+			buildPhases = (
+				08A377C91925316600481FEC /* Sources */,
+				08A377CA1925316600481FEC /* Frameworks */,
+				08A377CB1925316600481FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RD_CustomContainerViewController;
+			productName = RD_CustomContainerViewController;
+			productReference = 08A377CD1925316600481FEC /* RD_CustomContainerViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08A377ED1925316600481FEC /* RD_CustomContainerViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A378021925316600481FEC /* Build configuration list for PBXNativeTarget "RD_CustomContainerViewControllerTests" */;
+			buildPhases = (
+				08A377EA1925316600481FEC /* Sources */,
+				08A377EB1925316600481FEC /* Frameworks */,
+				08A377EC1925316600481FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A377F41925316600481FEC /* PBXTargetDependency */,
+			);
+			name = RD_CustomContainerViewControllerTests;
+			productName = RD_CustomContainerViewControllerTests;
+			productReference = 08A377EE1925316600481FEC /* RD_CustomContainerViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08A377C51925316600481FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					08A377ED1925316600481FEC = {
+						TestTargetID = 08A377CC1925316600481FEC;
+					};
+				};
+			};
+			buildConfigurationList = 08A377C81925316600481FEC /* Build configuration list for PBXProject "RD_CustomContainerViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08A377C41925316600481FEC;
+			productRefGroup = 08A377CE1925316600481FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08A377CC1925316600481FEC /* RD_CustomContainerViewController */,
+				08A377ED1925316600481FEC /* RD_CustomContainerViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08A377CB1925316600481FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377E91925316600481FEC /* Images.xcassets in Resources */,
+				08A378091925344500481FEC /* ChildViewController1.xib in Resources */,
+				08A377DB1925316600481FEC /* InfoPlist.strings in Resources */,
+				08A377E41925316600481FEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A377EC1925316600481FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377FA1925316600481FEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A377C91925316600481FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377E71925316600481FEC /* ViewController.m in Sources */,
+				08A378081925344500481FEC /* ChildViewController1.m in Sources */,
+				08A377E11925316600481FEC /* AppDelegate.m in Sources */,
+				08A377DD1925316600481FEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A377EA1925316600481FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A377FC1925316600481FEC /* RD_CustomContainerViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08A377F41925316600481FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A377CC1925316600481FEC /* RD_CustomContainerViewController */;
+			targetProxy = 08A377F31925316600481FEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08A377D91925316600481FEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A377DA1925316600481FEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08A377E21925316600481FEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A377E31925316600481FEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08A377F81925316600481FEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A377F91925316600481FEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08A377FD1925316600481FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08A377FE1925316600481FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08A378001925316600481FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
+				INFOPLIST_FILE = "RD_CustomContainerViewController/RD_CustomContainerViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08A378011925316600481FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
+				INFOPLIST_FILE = "RD_CustomContainerViewController/RD_CustomContainerViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		08A378031925316600481FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RD_CustomContainerViewController.app/RD_CustomContainerViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RD_CustomContainerViewControllerTests/RD_CustomContainerViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		08A378041925316600481FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RD_CustomContainerViewController.app/RD_CustomContainerViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
+				INFOPLIST_FILE = "RD_CustomContainerViewControllerTests/RD_CustomContainerViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08A377C81925316600481FEC /* Build configuration list for PBXProject "RD_CustomContainerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A377FD1925316600481FEC /* Debug */,
+				08A377FE1925316600481FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A377FF1925316600481FEC /* Build configuration list for PBXNativeTarget "RD_CustomContainerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A378001925316600481FEC /* Debug */,
+				08A378011925316600481FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08A378021925316600481FEC /* Build configuration list for PBXNativeTarget "RD_CustomContainerViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A378031925316600481FEC /* Debug */,
+				08A378041925316600481FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08A377C51925316600481FEC /* Project object */;
+}
