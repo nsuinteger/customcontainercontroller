@@ -59,7 +59,10 @@ struct
 //    [newVC willMoveToParentViewController:self];
     presentingVC.view.frame = self.contentView.bounds;  //Set a frame or constraints
     
+    [presentingVC beginAppearanceTransition:YES animated:YES];
+
     [self addChildViewController:presentingVC];
+    [currentVC willMoveToParentViewController:nil];
 
     [self.contentView addSubview:presentingVC.view];
     [self.contentView sendSubviewToBack:presentingVC.view];
@@ -75,15 +78,13 @@ struct
     
     
     [self transitionFromViewController:currentVC toViewController:presentingVC   // 3
-                              duration:0.7 options:UIViewAnimationOptionCurveEaseInOut
+                              duration:0.6 options:UIViewAnimationOptionCurveEaseInOut
                             animations:^{
-                                
                                 presentingVC.view.transform = CGAffineTransformIdentity;
                             }
                             completion:^(BOOL finished) {
                                 [presentingVC didMoveToParentViewController:self];
                                 
-                                [currentVC willMoveToParentViewController:nil];
                                 [currentVC removeFromParentViewController];
                             }];
 
