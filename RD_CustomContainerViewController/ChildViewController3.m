@@ -1,25 +1,18 @@
 //
-//  ChildViewController1.m
+//  ChildViewController3.m
 //  RD_CustomContainerViewController
 //
-//  Created by Mevan Alles on 16/5/14.
+//  Created by Mevan 2359  on 16/5/14.
 //  Copyright (c) 2014 Home. All rights reserved.
 //
 
-#import "ChildViewController1.h"
+#import "ChildViewController3.h"
 
-@interface ChildViewController1 ()
+@interface ChildViewController3 ()
 
 @end
 
-@implementation ChildViewController1
-
-- (IBAction)buttonTapped:(id)sender
-{
-    UIViewController *controller = [UIViewController new];
-    controller.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:controller animated:YES];
-}
+@implementation ChildViewController3
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,5 +48,16 @@
     DLog();
     [super viewDidDisappear:animated];
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

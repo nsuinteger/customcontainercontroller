@@ -1,25 +1,18 @@
 //
-//  ChildViewController1.m
+//  ChildViewController2.m
 //  RD_CustomContainerViewController
 //
-//  Created by Mevan Alles on 16/5/14.
+//  Created by Mevan 2359  on 16/5/14.
 //  Copyright (c) 2014 Home. All rights reserved.
 //
 
-#import "ChildViewController1.h"
+#import "ChildViewController2.h"
 
-@interface ChildViewController1 ()
+@interface ChildViewController2 ()
 
 @end
 
-@implementation ChildViewController1
-
-- (IBAction)buttonTapped:(id)sender
-{
-    UIViewController *controller = [UIViewController new];
-    controller.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:controller animated:YES];
-}
+@implementation ChildViewController2
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,5 +48,6 @@
     DLog();
     [super viewDidDisappear:animated];
 }
+
 
 @end

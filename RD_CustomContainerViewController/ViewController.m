@@ -8,50 +8,111 @@
 
 #import "ViewController.h"
 #import "ChildViewController1.h"
+#import "ChildViewController2.h"
+#import "ChildViewController3.h"
 
 @interface ViewController ()
+{
+struct
+    {
+        unsigned int activeChildViewControllerTag:3;
+    } _controlFlags;
+}
 
-@property (nonatomic, strong) NSMutableArray *childViewControllers;
+@property (nonatomic, strong) UIViewController *childVC1;
+@property (nonatomic, strong) UIViewController *childVC2;
+@property (nonatomic, strong) UIViewController *childVC3;
+
+@property (nonatomic, strong) NSMutableDictionary *childVCDictionary;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
 @implementation ViewController
 
-- (IBAction)addButtonTapped:(id)sender
+- (IBAction)addButtonTapped:(UIButton *)sender
 {
-    ChildViewController1 *vc = [ChildViewController1 new];
-    [self.childViewControllers addObject:vc];
+    if (sender.tag == _controlFlags.activeChildViewControllerTag) { NSLog(@"same vc"); return; }
     
-    [self addChildViewController:vc];
-    vc.view.frame = self.contentView.bounds;
-    [self.contentView addSubview:vc.view];
-    [vc didMoveToParentViewController:self];
-   
-    /*
-     this bottom part is which I need help with
-     */
-//    ChildViewController1 *vc = [ChildViewController1 new];
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-//    [self.childViewControllers addObject:nav];
-//    
-//    [self addChildViewController:vc];
-//    vc.view.frame = self.contentView.bounds;
-//    [self.contentView addSubview:vc.view];
-//    [vc didMoveToParentViewController:self];
+    UIViewController *currentVC = [self getVCWithIndex:_controlFlags.activeChildViewControllerTag];
+    UIViewController *presentingVC = nil;
+    
+    if (sender.tag == 2)
+    {
+        if (!self.childVC2)
+        {
+            self.childVC2 = [[UINavigationController alloc] initWithRootViewController:[ChildViewController2 new]];
+            [self.childVCDictionary setObject:self.childVC2 forKey:@(sender.tag)];
+        }
+    }
+    else if (sender.tag == 3)
+    {
+        if (!self.childVC3)
+        {
+            self.childVC3 = [[UINavigationController alloc] initWithRootViewController:[ChildViewController3 new]];
+            [self.childVCDictionary setObject:self.childVC3 forKey:@(sender.tag)];
+        }
+    }
+    _controlFlags.activeChildViewControllerTag = (uint)sender.tag;
+    presentingVC = [self getVCWithIndex:sender.tag];
+    
+//    [newVC willMoveToParentViewController:self];
+    presentingVC.view.frame = self.contentView.bounds;  //Set a frame or constraints
+    
+    [self addChildViewController:presentingVC];
+
+    [self.contentView addSubview:presentingVC.view];
+    [self.contentView sendSubviewToBack:presentingVC.view];
+    
+    
+    CGRect endFrame = self.contentView.bounds;
+    
+    
+    CGFloat scale = 0.001;
+    CGAffineTransform transform = CGAffineTransformMakeScale(1, scale);
+    transform = CGAffineTransformTranslate(transform, 0 ,-CGRectGetHeight(endFrame)* (pow(scale, -1)) /2.0);
+    presentingVC.view.transform = transform;
+    
+    
+    [self transitionFromViewController:currentVC toViewController:presentingVC   // 3
+                              duration:0.7 options:UIViewAnimationOptionCurveEaseInOut
+                            animations:^{
+                                
+                                presentingVC.view.transform = CGAffineTransformIdentity;
+                            }
+                            completion:^(BOOL finished) {
+                                [presentingVC didMoveToParentViewController:self];
+                                
+                                [currentVC willMoveToParentViewController:nil];
+                                [currentVC removeFromParentViewController];
+                            }];
+
+    
+}
+
+- (UIViewController *)getVCWithIndex:(NSUInteger)index
+{
+    return self.childVCDictionary[@(index)];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.childViewControllers = [NSMutableArray array];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.childVCDictionary = [NSMutableDictionary dictionary];
+    
+    UINavigationController *myNav = [[UINavigationController alloc] initWithRootViewController:[ChildViewController1  new]];
+    self.childVC1 = myNav;
+    
+//    [myNav willMoveToParentViewController:self];
+    myNav.view.frame = self.contentView.bounds;  //Set a frame or constraints
+    [self.contentView addSubview:myNav.view];
+    [self addChildViewController:myNav];
+    [myNav didMoveToParentViewController:self];
+    
+    [self.childVCDictionary setObject:myNav forKey:@(1)];
+    _controlFlags.activeChildViewControllerTag = 1;
+    
 }
 
 @end

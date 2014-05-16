@@ -23,6 +23,8 @@
 		08A377FC1925316600481FEC /* RD_CustomContainerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A377FB1925316600481FEC /* RD_CustomContainerViewControllerTests.m */; };
 		08A378081925344500481FEC /* ChildViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A378061925344500481FEC /* ChildViewController1.m */; };
 		08A378091925344500481FEC /* ChildViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A378071925344500481FEC /* ChildViewController1.xib */; };
+		D487CA8F19261A8700E99201 /* ChildViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D487CA8E19261A8700E99201 /* ChildViewController2.m */; };
+		D487CA9219261AAA00E99201 /* ChildViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = D487CA9119261AAA00E99201 /* ChildViewController3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		08A378051925344500481FEC /* ChildViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController1.h; sourceTree = "<group>"; };
 		08A378061925344500481FEC /* ChildViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController1.m; sourceTree = "<group>"; };
 		08A378071925344500481FEC /* ChildViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController1.xib; sourceTree = "<group>"; };
+		D487CA8D19261A8700E99201 /* ChildViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController2.h; sourceTree = "<group>"; };
+		D487CA8E19261A8700E99201 /* ChildViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController2.m; sourceTree = "<group>"; };
+		D487CA9019261AAA00E99201 /* ChildViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController3.h; sourceTree = "<group>"; };
+		D487CA9119261AAA00E99201 /* ChildViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,10 @@
 				08A378051925344500481FEC /* ChildViewController1.h */,
 				08A378061925344500481FEC /* ChildViewController1.m */,
 				08A378071925344500481FEC /* ChildViewController1.xib */,
+				D487CA8D19261A8700E99201 /* ChildViewController2.h */,
+				D487CA8E19261A8700E99201 /* ChildViewController2.m */,
+				D487CA9019261AAA00E99201 /* ChildViewController3.h */,
+				D487CA9119261AAA00E99201 /* ChildViewController3.m */,
 			);
 			path = RD_CustomContainerViewController;
 			sourceTree = "<group>";
@@ -258,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D487CA8F19261A8700E99201 /* ChildViewController2.m in Sources */,
 				08A377E71925316600481FEC /* ViewController.m in Sources */,
 				08A378081925344500481FEC /* ChildViewController1.m in Sources */,
 				08A377E11925316600481FEC /* AppDelegate.m in Sources */,
 				08A377DD1925316600481FEC /* main.m in Sources */,
+				D487CA9219261AAA00E99201 /* ChildViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "RD_CustomContainerViewController/RD_CustomContainerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RD_CustomContainerViewController/RD_CustomContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "RD_CustomContainerViewController/RD_CustomContainerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +480,7 @@
 				08A378011925316600481FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A378021925316600481FEC /* Build configuration list for PBXNativeTarget "RD_CustomContainerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +489,7 @@
 				08A378041925316600481FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
